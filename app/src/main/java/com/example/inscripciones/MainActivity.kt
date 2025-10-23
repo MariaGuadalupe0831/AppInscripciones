@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity(), Inscripcion_Contract.View {
             "Ingenieria en Desarrollo y Gestion de Software Multiplataforma",
             "Ingeniera en Mecatronica",
             "Ingenieria Civil",
+            "Ingenieria en Metal Mecanica",
             "Otra"
         )
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, carreras)
