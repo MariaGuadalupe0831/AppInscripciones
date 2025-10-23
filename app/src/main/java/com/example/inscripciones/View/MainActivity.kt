@@ -1,16 +1,19 @@
-package com.example.inscripciones
+package com.example.inscripciones.View
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ArrayAdapter
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Spinner
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import android.widget.ArrayAdapter
 import com.example.inscripciones.Contract.Inscripcion_Contract
 import com.example.inscripciones.Presenter.Cls_InscripcionesPresenter
-import android.widget.*
-
+import com.example.inscripciones.R
 
 class MainActivity : AppCompatActivity(), Inscripcion_Contract.View {
     private lateinit var presenter: Inscripcion_Contract.Presenter

@@ -1,15 +1,14 @@
-package com.example.inscripciones
+package com.example.inscripciones.View
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import java.util.Locale
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import com.example.inscripciones.Model.Cls_InscripcionesModel
+import com.example.inscripciones.R
+import java.util.Locale
 
 class Resultado : AppCompatActivity() {
 
@@ -38,12 +37,12 @@ class Resultado : AppCompatActivity() {
         // Mostrar los resultados
         tvNombre.text = "Nombre: $nombre"
         tvCarrera.text = "Carrera: $carrera"
-        tvPromedio.text = String.format(Locale.US, "Promedio: %.2f", promedio)
-        tvMontoBase.text = String.format(Locale.US, "Monto base: %.2f", Cls_InscripcionesModel.MontoBase)
+        tvPromedio.text = String.Companion.format(Locale.US, "Promedio: %.2f", promedio)
+        tvMontoBase.text = String.Companion.format(Locale.US, "Monto base: %.2f", Cls_InscripcionesModel.Companion.MontoBase)
 
         val rate = model.calcularDescuento(promedio)
-        tvDescuento.text = String.format(Locale.US, "Descuento (%.0f%%): -%.2f", rate * 100, descuento)
-        tvMontoFinal.text = String.format(Locale.US, "Monto final a pagar: %.2f", total)
+        tvDescuento.text = String.Companion.format(Locale.US, "Descuento (%.0f%%): -%.2f", rate * 100, descuento)
+        tvMontoFinal.text = String.Companion.format(Locale.US, "Monto final a pagar: %.2f", total)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

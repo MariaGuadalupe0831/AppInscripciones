@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Inscripciones">
         <activity
-            android:name=".Resultado"
+            android:name=".View.Resultado"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".View.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
