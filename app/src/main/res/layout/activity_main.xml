@@ -15,11 +15,6 @@
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="-187dp">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="105dp"
-            app:srcCompat="@mipmap/Inscripcion" />
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
